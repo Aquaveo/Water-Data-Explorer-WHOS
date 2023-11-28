@@ -15,7 +15,7 @@ ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
 RUN cd ${TETHYS_HOME}/Water-Data-Explorer-WHOS &&\
   micromamba install --yes --file requirements.txt -c conda-forge && \
-  pip install pywaterml && \
+  # pip install pywaterml && \
   tethys install -N -w
 
 #########################
